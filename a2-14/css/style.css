@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+    padding: 0; /* body имеет свои собственные отступы, это действие всегда по-умолчанию*/
     margin: 0;
 }
 header {
@@ -17,6 +17,7 @@ li {
 a {
     text-decoration: none; /* для всех ссылок */
 }
+
 .header-container, .main-container {
     width: 70%;
     margin: 0 auto;
@@ -112,6 +113,10 @@ a {
     padding-top: 102px;
 
 }
+.hr-main-title {
+    width: 75%;
+    border-color: #ECECEC; /* для hr цвет задается через border */
+}
 
 .main-title-left h1 {
     margin-top: 0;
@@ -190,9 +195,79 @@ a {
     width: 70%;
     height: 600px;
     margin-left: 15%;
-    background-color: red;
     display: flex;
-    align-items: stretch; /* убрать */
+    flex-direction: column;
     padding-top: 102px;
+}
 
+.main-body-title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.main-body-title h1 {
+    margin-top: 0;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    max-width: 700px;
+    letter-spacing: 1px;
+}
+
+.main-body-title p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    max-width: 500px;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.hr_main-body-title {
+    width: 10%;
+    border-color: red;
+    margin-bottom: 80px;
+}
+
+.main-body-content {
+
+}
+.main-body-content-select-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.main-body-content-select-bar .select-bar-items {
+    margin: 0 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.main-body-content-select-bar .select-bar-items:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.main-body-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between; /* равномерное растягивание по ширине */
+}
+
+.content-container-items {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
 }
