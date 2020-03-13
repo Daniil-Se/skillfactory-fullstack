@@ -1,0 +1,184 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #F6F2F2;
+    width: 100%;
+    height: 691px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none; /* для всех списков */
+}
+a {
+    text-decoration: none; /* для всех ссылок */
+}
+.header-container, .main-container {
+    width: 70%;
+    margin: 0 auto;
+}
+.nav-bar {
+    background-color: #000;
+    margin: 0 auto;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar li {
+    padding: 0 25px;
+    line-height: 89px;
+}
+.nav-bar li:hover{
+    background-color: red;
+}
+.nav-bar li a {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: 'Open Sans', sans-serif;
+}
+.head-title {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding-top: 102px;
+}
+.head-title-left, .head-title-right {
+    width: 50%;
+}
+.head-title-left h1 {
+    margin-top: 0;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 3.7em;
+    max-width: 500px;
+    letter-spacing: 4px;
+}
+.head-title-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    max-width: 470px;
+    padding-bottom: 61px;
+    margin: 0;
+    display: block;
+}
+.head-title-left a {
+    display: inline-block;
+    padding: 18px 65px;
+    text-align: center;
+    width: 150px;
+    background-color: red;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.head-title-right-video {
+    display: flex;
+    align-items: center;
+    /*justify-content: right;*/
+    height: 100%;
+    width: 100%;
+}
+.head-title-right-video iframe{
+    height: 100%;
+}
+
+
+
+
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title {
+    width: 80%;
+    margin-left: 15%;
+    display: flex;
+    align-items: stretch; /* убрать */
+    padding-top: 102px;
+
+}
+
+.main-title-left h1 {
+    margin-top: 0;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    max-width: 700px;
+    letter-spacing: 1px;
+}
+
+.main-title-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    max-width: 470px;
+    padding-bottom: 61px;
+    margin: 0;
+    display: block;
+}
+.main-title-left a {
+    display: inline-block;
+    padding: 15px 65px;
+    border: 2px red solid;
+    text-align: center;
+    width: 150px;
+    border-radius: 3px;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-title-left {
+    width: 40%;
+}
+.main-title-right {
+    width: 60%;
+    display: flex; /* модуль макета гибкого контейнера — представляет собой способ компоновки элементов, в основе лежит идея оси. */
+    flex-wrap: wrap; /* Flex-элементы переносятся, располагаясь в несколько горизонтальных рядов (если не помещаются в один ряд) в направлении слева направо (в rtl справа налево). */
+}
+
+.main-title-right-items img {
+    margin-bottom: 20px;
+}
+
+.main-title-right-items:nth-of-type(1),
+.main-title-right-items:nth-of-type(3) {
+    max-width: 440px;
+    margin-right: 20px;
+}
+.main-title-right-items:nth-of-type(2),
+.main-title-right-items:nth-of-type(4){
+    max-width: 480px;
+}
+
+.main-title-right h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    /*max-width: 500px;*/
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.main-title-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    /*max-width: 500px;*/
+    padding-bottom: 61px;
+    margin: 0;
+    display: block;
+}
